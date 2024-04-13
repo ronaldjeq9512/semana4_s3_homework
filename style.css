@@ -1,0 +1,27 @@
+@font-face{
+    font-family: 'jacquard24';
+    src: url(/fonts/Jacquard24-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'jersey';
+    src: url(/fonts/Jersey10Charted-Regular.ttf) format('truetype');
+}
+
+
+h1 {
+ font-family: 'jersey', sans-serif;
+ font-size: 3em;
+}
+
+section{
+    border-left: 10px solid red;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img1 {
+    height: 150px;
+    width: 150px;
+}
