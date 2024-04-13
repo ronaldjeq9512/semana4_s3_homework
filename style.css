@@ -1,27 +1,86 @@
-@font-face{
+@font-face {
     font-family: 'jacquard24';
-    src: url(/fonts/Jacquard24-Regular.ttf) format('truetype');
+    src: url('fonts/Jacquard24-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face{
     font-family: 'jersey';
-    src: url(/fonts/Jersey10Charted-Regular.ttf) format('truetype');
+    src: url('fonts/Jersey10Charted-Regular.ttf') format('truetype');
 }
 
+.navBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 20px;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex; 
+    justify-content: center;
+    background-color: chartreuse;
+    border-radius: 20px;
+}
+
+nav a {
+    margin-inline: 10px;
+}
 
 h1 {
- font-family: 'jersey', sans-serif;
+ font-family: 'jacquard24', sans-serif;
  font-size: 3em;
+ text-shadow: 10px 3px 3px green;
+}
+
+p {
+    font-family: 'jersey', sans-serif;
 }
 
 section{
-    border-left: 10px solid red;
+    border-left: 5px solid red;
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .img1 {
     height: 150px;
     width: 150px;
+    border: 2px solid black;
+    border-radius: 20px;
+    transform: rotate(23deg);
+    transition:  all 0.2s ease-in;
+    animation-name: colorshadow;
+    animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.img1:hover {
+    box-shadow: 10px 10px 10px red;
+    transform: translate(0, -80px)
+
+}
+
+.block-notice {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    background-image: linear-gradient(to left, purple, blue);
+}
+
+@keyframes colorshadow {
+    from{box-shadow: 0px 0px 10px yellow}
+    to{box-shadow: 10px 10px 10px red;}
 }
